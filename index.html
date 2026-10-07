@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Teachers' Day 2026-2027 Celebration - IKAW NAMAN">
+    <title>Teachers' Day 2026-2027 | IKAW NAMAN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Advanced Animated Background -->
+    <div class="animated-background">
+        <canvas id="backgroundCanvas"></canvas>
+        <div class="gradient-overlay"></div>
+        <div class="floating-elements">
+            <div class="float-element book">📚</div>
+            <div class="float-element pencil">✏️</div>
+            <div class="float-element heart">💛</div>
+            <div class="float-element star">⭐</div>
+            <div class="float-element note">📝</div>
+            <div class="float-element apple">🎓</div>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header Navigation -->
+        <header class="header">
+            <div class="logo">
+                <span class="logo-icon">✦</span>
+                <span class="logo-text">Teachers' Day 2026-2027</span>
+            </div>
+            <nav class="nav">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#appreciation" class="nav-link">Appreciation</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#messages" class="nav-link">Messages</a>
+                <a href="#event" class="nav-link">Event</a>
+            </nav>
+            <div class="header-controls">
+                <button id="musicBtn" class="music-btn" aria-label="Toggle Music">🔊</button>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-tagline">Teachers' Day 2026 – 2027</div>
+                <h1 class="hero-title">IKAW NAMAN</h1>
+                <p class="hero-subtitle">"Panahon mo naman para pahalagahan, pasalamatan, at ipagdiwang."</p>
+                <p class="hero-description">
+                    To the hearts that teach, inspire, and shape our future — this time, the spotlight is yours.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('appreciation')">
+                        CELEBRATE OUR TEACHERS
+                    </button>
+                    <button class="btn btn-secondary" onclick="openSurprise()">
+                        DISCOVER THE SURPRISE
+                    </button>
+                </div>
+            </div>
+            <div class="hero-particles"></div>
+        </section>
+
+        <!-- Appreciation Section -->
+        <section id="appreciation" class="appreciation">
+            <h2 class="section-title">This Time, <span class="highlight">Ikaw Naman.</span></h2>
+            <p class="section-subtitle">For every lesson you taught, every dream you inspired, and every life you changed.</p>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">📖</div>
+                    <h3>Salamat sa walang sawang pagtuturo.</h3>
+                    <p>You teach with patience, heart, and endless dedication every single day.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">✨</div>
+                    <h3>Salamat sa paniniwala sa aming kakayahan.</h3>
+                    <p>You gave us the confidence to dream bigger and reach higher.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">☀️</div>
+                    <h3>Salamat sa pagiging ilaw sa aming kinabukasan.</h3>
+                    <p>You inspire us to be kinder, wiser, and braver every day.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💛</div>
+                    <h3>You deserve to be celebrated, too.</h3>
+                    <p>Today, the spotlight is yours and we are grateful for you.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery">
+            <h2 class="section-title">Our Teacher Appreciation <span class="highlight">Gallery</span></h2>
+            <p class="section-subtitle">Moments of gratitude, memories that last.</p>
+            
+            <div class="gallery-container">
+                <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=80')">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=300&q=80" alt="In the Classroom">
+                    <div class="gallery-overlay">In the Classroom</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80')">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=300&q=80" alt="School Activities">
+                    <div class="gallery-overlay">School Activities</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1517486808906-6ca8b3d2d2d1?auto=format&fit=crop&w=900&q=80')">
+                    <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3d2d2d1?auto=format&fit=crop&w=300&q=80" alt="Celebration">
+                    <div class="gallery-overlay">Celebration Highlights</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=900&q=80')">
+                    <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=300&q=80" alt="With Students">
+                    <div class="gallery-overlay">With Our Students</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80')">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=300&q=80" alt="Making Difference">
+                    <div class="gallery-overlay">Making a Difference</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Messages Section -->
+        <section id="messages" class="messages">
+            <h2 class="section-title">Message for <span class="highlight">Ma'am and Sir</span></h2>
+            <p class="section-subtitle">Leave a note of gratitude. Your words mean the world.</p>
+            
+            <div class="messages-container">
+                <form class="message-form" id="messageForm">
+                    <div class="form-group">
+                        <label for="teacherName">Teacher's Name / Nickname</label>
+                        <input type="text" id="teacherName" required placeholder="Enter teacher's name">
+                    </div>
+                    <div class="form-group">
+                        <label for="messageInput">Your Message</label>
+                        <textarea id="messageInput" required rows="5" placeholder="Write your heartfelt message..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">SEND WITH GRATITUDE</button>
+                </form>
+
+                <div class="message-wall" id="messageWall">
+                    <div class="sticky-note peach">
+                        <p>"Thank you for always believing in us."</p>
+                        <span>— Student</span>
+                    </div>
+                    <div class="sticky-note sky">
+                        <p>"You inspire us to keep learning and growing."</p>
+                        <span>— Future Graduate</span>
+                    </div>
+                    <div class="sticky-note gold">
+                        <p>"Salamat po, Ma'am/Sir, for your patience and love."</p>
+                        <span>— Grateful Learner</span>
+                    </div>
+                    <div class="sticky-note rose">
+                        <p>"Your lessons will stay with us forever."</p>
+                        <span>— Your Student</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Surprise Section -->
+        <section id="surprise" class="surprise">
+            <h2 class="section-title">Because Today, <span class="highlight">IKAW NAMAN.</span></h2>
+            
+            <div class="gift-box" id="giftBox" onclick="toggleGift()">
+                <div class="gift-wrap">
+                    <div class="gift-ribbon-vertical"></div>
+                    <div class="gift-ribbon-horizontal"></div>
+                    <div class="gift-top"></div>
+                </div>
+                <div class="gift-body"></div>
+            </div>
+
+            <div class="surprise-message" id="surpriseMessage" style="display: none;">
+                <p>
+                    Sa bawat aral na itinuro, may pangarap na nabuo. Sa bawat salitang binitiwan, may pusong nabigyan ng pag-asa. 
+                    Ngayong Araw ng mga Guro, hindi muna kami ang bida — dahil ngayon, IKAW NAMAN.
+                </p>
+                <button class="btn btn-primary" onclick="scrollToSection('event')">YOU ARE APPRECIATED</button>
+            </div>
+        </section>
+
+        <!-- Event Information Section -->
+        <section id="event" class="event-info">
+            <h2 class="section-title">Event <span class="highlight">Information</span></h2>
+            
+            <div class="event-details">
+                <div class="event-card">
+                    <h3>Event Details</h3>
+                    <div class="detail-row">
+                        <span class="label">School:</span>
+                        <span class="value">School Name Here</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Date & Time:</span>
+                        <span class="value">November 25, 2026 | 9:00 AM - 12:00 PM</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Venue:</span>
+                        <span class="value">School Gymnasium</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Activities:</span>
+                        <span class="value">Program • Tribute • Performances • Awards</span>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <h3>Countdown</h3>
+                    <div class="countdown" id="countdown">
+                        <div class="countdown-item">
+                            <span class="countdown-value" id="days">120</span>
+                            <span class="countdown-label">Days</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-value" id="hours">14</span>
+                            <span class="countdown-label">Hours</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-value" id="minutes">32</span>
+                            <span class="countdown-label">Minutes</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-value" id="seconds">18</span>
+                            <span class="countdown-label">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Made with love, gratitude, and appreciation for every teacher who makes a difference.</p>
+            <div class="footer-meta">Teachers' Day Celebration | School Year 2026–2027 | IKAW NAMAN</div>
+        </footer>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <img id="lightboxImage" src="" alt="Gallery image">
+        <button class="lightbox-close">&times;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
